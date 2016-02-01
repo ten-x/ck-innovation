@@ -1,0 +1,16 @@
+{
+  "name": "canwemakeit",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.9",
+    "lodash": "~3.9.3",
+    "handlebars": "~3.0.3",
+    "foundation": "~5.5.2",
+    "sweetalert": "~1.0.1",
+    "fontawesome": "~4.3.0",
+    "base64": "~0.3.0"
+  },
+  "resolutions": {
+    "jquery": ">= 2.1.0"
+  }
+}

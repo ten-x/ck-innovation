@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Can We Make It?</title>
+    <meta name="description" content="Maker Project Idea Generator">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/7f638a65.vendor.css">
+    <link rel="stylesheet" href="styles/473aea0a.main.css">
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <div class="hero-unit mc-content spaced">
+    </div>
+
+    <div class="action-unit spaced">
+      <span class="mc-action-button" id="next-button"><i class="fa fa-refresh"></i></span>
+      <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <span class="mc-action-button" id="share-button"><i class="fa fa-share-alt"></i></span>
+    </div>
+
+    <div class="footer spaced">
+      <hr>
+      &copy; 2015 | Made by <a href="http://ten-x.red" target="blank">TEN-X</a>
+    </div>
+
+    <div id="shareModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h2 id="modalTitle">Copy this:</h2>
+      <form>
+        <input type="text" id="shareUrlInputField" />
+      </form>
+      <hr>
+      <button class="button secondary" id="buttonCloseShareModal">OK</button>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+    <script id="cta-template" type="text/x-handlebars-template">
+      <h1>
+        <span id="randomLets">Can we make a {{{thing}}} that {{{action}}}{{{logic}}}{{{trigger}}}?</span>
+      </h1>
+    </script>
+
+
+    <script id="item-template" type="text/x-handlebars-template">
+      <span class="mc-group" data-mcType="{{type}}">
+        <span class="mc-item {{type}}" data-mcType="{{type}}" id="{{id1}}">{{content1}}</span>
+        {{#if isConnector}}
+        <span class="mc-item logic connector" data-mcType="connector">{{connector}}</span>&nbsp;<span class="mc-item {{type}}" id="{{id2}}" data-mcType="{{type}}">{{content2}}</span>
+        {{/if}}
+      </span>
+    </script>
+
+
+    <script src="scripts/1797c2f8.vendor.js"></script>
+
+        <script src="scripts/f542bad8.main.js"></script>
+</body>
+</html>
